@@ -30,6 +30,10 @@ public class PlayerMovements : MonoBehaviour {
             rb.AddForce(0, jumpForce * Time.deltaTime, 0);
             canJump = false;
         }
+
+        if(transform.position.y <= 0){
+            FindObjectOfType<GameManager>().EndGame();
+        }
 	}
 
     private void OnCollisionEnter(Collision collision)

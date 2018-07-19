@@ -16,8 +16,11 @@ public class ObstacleMovement : MonoBehaviour {
 	// Update is called once per frame
     void FixedUpdate () {
         rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
-        if(transform.position.y < 0){
-            Destroy(transform);
-        }
 	}
+
+    void OnCollisionEnter(Collision collision){
+        if(collision.collider.tag == "Destroyer"){
+            Destroy(gameObject);
+        }
+    }
 }
