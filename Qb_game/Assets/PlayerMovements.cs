@@ -34,6 +34,8 @@ public class PlayerMovements : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        canJump = true;
+        if(collision.collider.name == "Ground"){
+            canJump = true;
+        }
     }
 }

@@ -10,17 +10,14 @@ public class ObstaclesManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("Start");
         InvokeRepeating("generateObstacles", spawnTime, spawnTime);
 	}
 
     void generateObstacles(){
         for (int i = 0; i < spawnPoints.Length; i++){
             int spawn = Random.Range(0, 2);
-            Debug.Log(i + " - " + spawn);
             if(spawn == 1){
-                
-                //Instantiate(obstacle, spawnPoints[i].position, spawnPoints[i].rotation);
+                Instantiate(obstacle, spawnPoints[i].position, spawnPoints[i].rotation);
             }
         }
     }
