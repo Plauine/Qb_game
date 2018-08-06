@@ -20,6 +20,7 @@ public class ObstacleMovement : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision){
         if(collision.collider.tag == "Destroyer"){
+            ScoreManager.score += 1;
             Destroy(gameObject);
         }
     }
