@@ -257,7 +257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260040207}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 6.86, z: 4.8}
+  m_LocalPosition: {x: 0, y: 6.86, z: 0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -396,10 +396,10 @@ GameObject:
   - component: {fileID: 515812939}
   - component: {fileID: 515812938}
   - component: {fileID: 515812937}
-  - component: {fileID: 515812936}
   - component: {fileID: 515812940}
   - component: {fileID: 515812941}
   - component: {fileID: 515812942}
+  - component: {fileID: 515812936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -421,7 +421,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 337546e12fda64b28a776bf98b7fa080, type: 2}
+  - {fileID: 2100000, guid: af65c0942482e46aeb256506726ff0f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,7 +429,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
+  m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -459,7 +459,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515812935}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 6d58037af810b4021ac921a71033e575, type: 3}
 --- !u!4 &515812939
 Transform:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 1332751070215652, guid: 44cec68872d0c44c1a0236b67bf227e2, type: 2}
-  pointCounter: {fileID: 0}
   spawnTime: 3
   spawnPoints:
   - {fileID: 771426680}
